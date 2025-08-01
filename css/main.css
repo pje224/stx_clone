@@ -20,7 +20,7 @@ li {
   list-style: none;
 }
 a {
-  color: #333;
+  color: #000;
   text-decoration: none;
 }
 body {
@@ -32,12 +32,12 @@ body {
     "wdth" 100; */
 }
 /* 공통영역 */
-.container{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
-.wrap{
-    position: relative;
-    display: block;
+.wrap {
+  position: relative;
+  display: block;
 }
