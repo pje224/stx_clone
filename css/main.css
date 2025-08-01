@@ -31,3 +31,13 @@ body {
   font-variation-settings:
     "wdth" 100; */
 }
+/* 공통영역 */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.wrap{
+    position: relative;
+    display: block;
+}
