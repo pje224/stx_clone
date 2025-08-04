@@ -69,6 +69,7 @@
 .business-list > li > a:hover {
   background-color: #f48025;
 }
+/* a:hover에 바로 background 넣을려고 하면 너비 높이 값 때문에 after를 써서 따로 주는 게 맞음 */
 .business-list > li > a::after {
   content: "";
   position: absolute;
@@ -80,7 +81,7 @@
   background: url(../images/bg_common.png) no-repeat;
   background-position: 0px 0px;
   opacity: 0;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 .business-list > li:nth-child(1) > a::after {
   background-position: -168px 0px;
@@ -95,7 +96,7 @@
   background-position: -139px -121px;
 }
 .business-list > li:nth-child(5) > a::after {
-  background-position: -272px -121px;
+  background-position: -270px -121px;
 }
 .business-list > li > a:hover::after {
   opacity: 1;
