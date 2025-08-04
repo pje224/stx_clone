@@ -1,1 +1,67 @@
 @charset "utf-8";
+/* 비즈니스 상단 */
+.business-top h2 {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 22px;
+  font-size: 44px;
+  text-align: center;
+}
+.business-top h2::after {
+  content: "";
+  position: absolute;
+  left: 49%;
+  bottom: 0px;
+  width: 37px;
+  height: 4px;
+  background-color: #ff0000;
+}
+.business-top p {
+  margin-top: 25px;
+  text-align: center;
+}
+/* 비즈니스 하단 */
+/* .business-bottom {
+  width: 100%;
+  height: 420px;
+  margin: 70px auto;
+  background: url(../images/img_business.png) no-repeat center;
+} */
+.business-list {
+  width: 100%;
+  height: 420px;
+  position: relative;
+  display: flex;
+  margin: 70px auto;
+  text-align: center;
+}
+.business-list > li {
+  width: calc(100% / 5);
+  padding-top: 98px;
+  background: url(../images/img_business.png) no-repeat center;
+  background-position: 0px 0px;
+}
+.business-list > li:nth-child(1) {
+  background-position: calc(240px * 0) 0px;
+}
+.business-list > li:nth-child(2) {
+  background-position: -240px 0px;
+}
+.business-list > li:nth-child(3) {
+  background-position: -480px 0px;
+}
+.business-list > li:nth-child(4) {
+  background-position: -720px 0px;
+}
+.business-list > li:nth-child(5) {
+  background-position: -960px 0px;
+}
+.business-list li a {
+  color: #fff;
+  font-size: 24px;
+}
+.business-list li:hover:first-of-type {
+  background: url(../images/bg_common.png) no-repeat;
+  background-position: 0 0;
+  background-color: #f48025;
+}
