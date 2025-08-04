@@ -1,10 +1,14 @@
 @charset "utf-8";
 /* 비즈니스 상단 */
+.business-top {
+  color: #111;
+}
 .business-top h2 {
   position: relative;
   padding-top: 100px;
   padding-bottom: 22px;
   font-size: 44px;
+  font-family: "NotoSansBold";
   text-align: center;
 }
 .business-top h2::after {
