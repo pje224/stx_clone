@@ -48,4 +48,5 @@ body {
   font-size: 0; /* 글씨 없애는 방법 중 하나 */
   background: url("../images/bg_common.png") no-repeat;
   background-position: -122px 0px;
+  cursor: pointer;
 }
