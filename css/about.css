@@ -39,7 +39,7 @@
 .about-keyword {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 200px;
   margin-top: 80px;
   text-align: center;
 }
