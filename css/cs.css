@@ -1,1 +1,26 @@
 @charset "utf-8";
+.contact {
+  background-color: #f8f8f8;
+}
+.contact-inner {
+  position: relative;
+  display: flex;
+  gap: 2px;
+  width: 100%;
+  padding: 60px 0 100px;
+}
+.contact-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  padding: 30px;
+  background-color: #fff;
+}
+.contact-txt h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.contact-txt span {
+  color: #444444;
+}
