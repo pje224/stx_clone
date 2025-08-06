@@ -2,11 +2,24 @@
 /* 상단 */
 .header {
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 999;
   width: 100%;
   height: 80px;
   background-color: #fff;
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+}
+/* 메뉴 배경은 js에서 꾸며줌!!!! */
+.header-bg {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  /* height: 400px; */
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s;
 }
 .header-inner {
   position: relative;
@@ -33,15 +46,43 @@
 }
 .gnb {
   display: flex;
+  height: 80px;
 }
 .gnb > li {
   width: calc(100% / 6);
+  height: 80px;
 }
 .gnb > li > a {
+  display: block;
+  width: 100%;
+  line-height: 80px;
   font-size: 19px;
   font-weight: bold;
-  /* line-height: 80px; */
 }
+/* 서브메뉴 */
+.depth2 {
+  padding: 50px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.depth2 li a {
+  display: block;
+  line-height: 35px;
+  color: #fff;
+}
+/* 메뉴 hover */
+.gnb > li:hover > a {
+  color: #ed1c24;
+}
+.depth2 li a:hover {
+  color: #ed1c24;
+}
+.gnb:hover .depth2 {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* 언어 */
 .lang {
   display: flex;
