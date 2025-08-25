@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* css 파일 연결 */
 @import url("modal.css");
+@import url("quickMenu.css");
 @import url("header.css");
 @import url("visual.css");
 @import url("business.css");
