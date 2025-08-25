@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <!-- 자바스크립트 -->
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
 
     <!-- seo 엔진 최적화 -->
     <!-- 웹페이지의 설명을 정의 -->
@@ -47,6 +48,25 @@
     <link rel="manifest" href="images/icon/site.webmanifest" />
   </head>
   <body>
+    <!-- 모달창(팝업창) -->
+    <div class="modal-wrap">
+      <div class="modal-main">
+        <span class="modal-logo"></span>
+        <p class="modal-notice">
+          해당 사이트는 <strong>스터디용</strong>으로 제작되었으며,<br />
+          리소스는 <strong>원저작자</strong>에게 있음을 알려드립니다.<br />
+          문제사항이 있을 시 연락주시면 빠른 시일 내 조치하겠습니다.<br />
+          <span>본 사이트는 Chrome 에 최적화되어 있습니다.</span>
+        </p>
+        <!-- 모달 창 닫기 -->
+        <div class="modal-close">
+          확인했습니다.
+          <i>(click 하여 닫기)</i>
+        </div>
+      </div>
+    </div>
+    <!-- 퀵메뉴 -->
+
     <!-- 전체 레이아웃 -->
     <div class="wrap">
       <!-- 상단 -->
@@ -75,7 +95,7 @@
                 </ul>
               </li>
               <li>
-                <a href="#">사업분야</a>
+                <a href="#news">사업분야</a>
                 <ul class="depth2">
                   <li><a href="#">건축사업</a></li>
                   <li><a href="#">주택사업</a></li>
@@ -141,11 +161,11 @@
           <span class="visual-txt">
             세계최고를 향해 STX건설이 힘차게 질주합니다!
           </span>
-          <button class="visual-btn">버튼</button>
+          <a href="#cs"><button class="visual-btn">버튼</button></a>
         </div>
       </section>
       <!-- 비즈니스 -->
-      <section class="business">
+      <section class="business" id="business">
         <div class="business-inner container">
           <!-- 비즈니스 상단 -->
           <div class="business-top">
@@ -170,7 +190,7 @@
         </div>
       </section>
       <!-- 뉴스 -->
-      <section class="news">
+      <section class="news" id="news">
         <!-- 배경색 -->
         <div class="news-bg"></div>
         <div class="news-inner container">
@@ -232,7 +252,7 @@
         </div>
       </section>
       <!-- 고객센터 -->
-      <section class="contact">
+      <section class="contact" id="cs">
         <div class="contact-inner container">
           <div class="contact-wrap">
             <!-- FAQ -->
