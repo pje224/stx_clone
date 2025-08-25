@@ -8,7 +8,10 @@ window.addEventListener("load", function () {
       topBtn.style.display = "none";
     }
   });
-  topBtn.addEventListener("click" , function(){
-    
-  })
+  topBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 });
